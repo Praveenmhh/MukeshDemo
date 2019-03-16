@@ -3,6 +3,7 @@ package com.cpi.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.Parameters;
 
 public class LoginPage {
 
@@ -20,6 +21,7 @@ public class LoginPage {
 	
 	@FindBy(xpath = "//button[text()='Log On']")
 	WebElement login;
+	
 	
 	public void LogintoCpi(String username, String password)
 	{

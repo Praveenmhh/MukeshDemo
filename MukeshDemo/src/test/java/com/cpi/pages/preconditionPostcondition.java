@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.cpi.utility.BrowserInitialization;
 import com.cpi.utility.CaptureScreenshot;
@@ -28,10 +29,11 @@ public class preconditionPostcondition {
 		 or = new ReadPropertyFile();
 	}
 	
+	@Parameters("URL")
 	@BeforeClass
-	public void StartApplication() throws IOException
+	public void StartApplication(String url) throws IOException
 	{
-		driver = BrowserInitialization.launchBrowser(driver, or.getpropvalue("URL"));
+		driver = BrowserInitialization.launchBrowser(driver, url);
 	}
 	
 	@AfterMethod
