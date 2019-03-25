@@ -17,6 +17,8 @@ public class LoginCPI extends preconditionPostcondition{
 	private String LogonScreen = "//div[@class='ids-login-widget']/child::h1";
 	private String LoginHomeScreen = "//span[@class='sapUxAPObjectPageHeaderIdentifierContainer']//ul//li/child::a";
 	private WebElement ele;
+	
+	
 	@Parameters({"URL","USERNAME", "PASSWORD"})
 	@Test
 	public void Login(String url, String username, String password)
@@ -51,4 +53,5 @@ public class LoginCPI extends preconditionPostcondition{
 			e.printStackTrace();
 		}
 	}
+	
 }
