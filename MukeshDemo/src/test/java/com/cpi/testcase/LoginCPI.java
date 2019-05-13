@@ -28,7 +28,9 @@ public class LoginCPI extends preconditionPostcondition{
 		try {
 			utl.webdriver_wait(LogonScreen, 30);
 			ele = driver.findElement(By.xpath(LogonScreen));
+			System.out.println("log on screen : " +ele);
 			if(ele.getText().contentEquals("Log On"))
+				
 			{
 				System.out.println("login page is displayed");
 			}
