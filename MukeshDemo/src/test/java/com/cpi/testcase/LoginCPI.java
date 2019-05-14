@@ -26,8 +26,8 @@ public class LoginCPI extends preconditionPostcondition{
 		utilities utl = new utilities();
 		
 		try {
-			utl.webdriver_wait(LogonScreen, 30);
-			ele = driver.findElement(By.xpath(LogonScreen));
+			/*//utl.webdriver_wait(LogonScreen, 30);
+			//ele = driver.findElement(By.xpath(LogonScreen));
 			System.out.println("log on screen : " +ele.getText());
 			if(ele.getText().contentEquals("Log On"))
 				
@@ -36,7 +36,7 @@ public class LoginCPI extends preconditionPostcondition{
 			}
 			else {
 				System.out.println("login page is not displayed");
-			}
+			}*/
 		LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
 		/*String[][] excelData =	Excel.getDataFromExcel(excelPath,excelSheetName, driver);*/
 		Thread.sleep(5000);
