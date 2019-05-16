@@ -15,7 +15,7 @@ public class CaptureScreenshot {
 	{
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			org.openqa.selenium.io.FileHandler.copy(src, new File("./ScreenShot/Loginn.png"));
+			org.openqa.selenium.io.FileHandler.copy(src, new File("./ScreenShot/Error.png"));
 		} catch (IOException e) {
 			System.out.println("Unable to take screeenshot" +e.getMessage());
 		}
